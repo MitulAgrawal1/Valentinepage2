@@ -1,0 +1,123 @@
+.custom-cursor, .button {
+    cursor: url('./images/cursor.png'), auto;
+}
+
+/* Font Styling */
+.dancing-script-custom {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700; 
+}
+
+.raleway-custom {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #AA1B2D;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('./images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card Styling */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    background-color: rgba(234, 214, 208, 0.8); /* Soft transparency */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    position: relative; /* Needed for button positioning */
+    min-height: 500px; /* Ensures enough space */
+}
+
+/* Title */
+.title {
+    font-size: 34px;
+    color: #AA1B2D;
+    padding: 5px;
+    font-family: "Dancing Script", cursive, sans-serif;
+}
+
+/* Heart Container */
+.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Button Container (Fix at Bottom) */
+.btn-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Button Styling */
+.button {
+    font-family: "Raleway", sans-serif;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100px;
+    color: #EAD6D0;
+    background-color: #AA1B2D;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    color: #AA1B2D;
+    background: #EAD6D0;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px rgba(170, 27, 45, 0.5);
+    transform: scale(1.05);
+}
+
+/* Error Button (Initially Hidden) */
+.button.button__error {
+    width: 100%;
+    display: none;
+}
+
+/* Text */
+.text {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 1px;
+    min-height: 100px; /* Ensures space for text */
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 90%; /* Prevents text from exceeding the card width */
+}
+
